@@ -1,15 +1,11 @@
-import java.util.*;
-
-
-
 public class Housing{
 
-public int getPriority(String n){
+public static int getPriority(String n){
 
  // The Weights of the housing in terms of best to worst.
  // Weights were taken from surveys and therefore represent the student body's opinions.
- 
- int Nv1 = 1;  // North Village 1
+ /*
+  int Nv1 = 1;  // North Village 1
  int Nv2Q = 2; // North village 2 quad
  int OCH = 3;  // Off campus house 
  int CC = 4;   // college court
@@ -28,84 +24,91 @@ public int getPriority(String n){
  int CD = 17;  // crawford double
  int SD = 18;  // shultz double
  int RD = 19;  // ravine double
+ */
+	
  
-	if(n == "Nv1"){
-	return Nv1;
-	}
-	
-	if(n == "Nv2Q"){
-	return Nv2Q;
-	}
-	
-	if(n == "OCH"){
-	return OCH;
-	}
-	
-	if(n == "CC"){
-	return CC;
-	}
-	
-	if(n == "Nv2D"){
-	return Nv2D;
-	}
+ int priority = 0;
+ switch (n)
+ {
 
-	if(n == "AC"){
-	return AC;
-	}
-	
-	if(n == "WS"){
-	return WS;
-	}
-	
-	if(n == "AH"){
-	return AH;
-	}
+	 case"Nv1":
+	 priority =1;
+	 break;
 
-	if(n == "ES"){
-	return ES;
-	}
-	
-	if(n == "CS"){
-	return CS;
-	}
+	 case "Nv2Q":
+	 priority = 2;
+     break;
 
-	if(n == "BS"){
-    return BS;
-	}
+     case "OCH":
+	 priority = 3;
+	 break;
 
-	if(n = "BwD"){
-	return BwD;
-	}
+	 case "CC":
+	 priority = 4;
+	 break;
+ 	
+ 	 case "Nv2D":
+	 priority = 5;
+	 break;
+    
+     case "AC":
+	 priority = 6;
+	 break;
 
-	if(n == "CDT"){
-	return CDT;
-	}
-	
-	if(n == "WD"){
-	return WD;
-	}
-	
-	if(n == "BD"){
-	return BD;
-	}
-	
-	if(n == "ED"){
-	return ED;
-	}
-	
-	if(n == "CD"){
-	return CD;
-	}
-	
-	if(n == "SD"){
-	return SD;
-	}
+     case "WS":
+	 priority = 7;
+	 break;
 
-	if(n == "RD"){
-	return RD;
-	}	
+	 case "AH":
+	 priority = 8;
+	 break;
 
- }
+	 case "ES":
+	 priority = 9;
+	 break;
+
+	 case "CS":
+	 priority = 10;
+	 break;
+
+     case "BS":
+	 priority = 11;
+	 break;
+
+	 case "BwD":
+	 priority = 12;
+	 break;
+
+     case "CDT":
+	 priority = 13;
+	 break;
+
+     case "WD":
+	 priority = 14;
+	 break;
+
+     case "BD":
+     priority = 15;
+ 	 break;
+
+     case "ED":
+     priority = 16;
+     break;
+
+     case "CD":
+     priority = 17;
+     break;
+
+	 case "SD":
+     priority = 18;
+     break;
+     
+     case "RD":
+   	 priority = 19;
+   	 break;
  
+    	}
+ 		return priority; 
+ 
+	}
 }
-
