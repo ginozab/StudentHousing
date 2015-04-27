@@ -148,6 +148,8 @@ public class RoomDraw {
 
 		double uKey = Sum.KeyVal(userHPriority, userRDN, usedN, randomNum1);
 
+		System.out.println("Your room draw key value is: ");
+
 		System.out.println(uKey);
 
 	} // if individual
